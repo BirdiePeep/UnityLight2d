@@ -59,9 +59,30 @@ namespace Bird.Light2D
 		{
 			Light2dFeature.OnLightDisable(this);
 		}
+		private void LateUpdate()
+		{
+			UpdateMesh();
+		}
 		protected private void OnDrawGizmos()
 		{
 			Gizmos.DrawIcon(transform.position, "Light2D/light.png");
+		}
+
+		//Mesh generation
+		float prevSpread = 0;
+		public void UpdateMesh()
+		{
+			//Check for change
+			bool needsRebuild = false;
+			if (prevSpread != spread)
+			{
+				needsRebuild = true;
+				prevSpread = spread;
+			}
+
+			//Generate if needed
+			if (needsRebuild)
+				SetMesh(GenerateMesh());
 		}
 
 		static Collider2D[] overlapBuffer = new Collider2D[1024];
@@ -79,22 +100,24 @@ namespace Bird.Light2D
 		}
 
 		//Mesh
-		[NonSerialized] public Mesh mesh;
+		public Mesh mesh;
 
 		public static List<Vector3> verts = new List<Vector3>();
 		public static List<int> tris = new List<int>();
 		public Mesh GenerateMesh()
 		{
-			int segmentCount = 32;
-			float segmentAngle = 360f / (float)segmentCount;
+			int maxSegments = 32;
+			float segmentAngle = 360f / (float)maxSegments;
+			int segmentCount = (int)Mathf.Ceil((float)maxSegments * (spread / 360f));
 			verts.Clear();
 			tris.Clear();
 
 			//Verts
 			verts.Add(Vector3.zero);
-			for (int i = 0; i < segmentCount; i++)
+			for (int i = 0; i < segmentCount + 1; i++)
 			{
-				float angle = (float)i * segmentAngle * (spread/360f);
+				float angle = (float)i * segmentAngle;
+				angle -= spread * 0.5f;
 				Quaternion rot = Quaternion.AngleAxis(angle, Vector3.back);
 				verts.Add( (rot * Vector3.right) * 1.02f);
 			}
@@ -106,10 +129,7 @@ namespace Bird.Light2D
 
 				tris.Add(0);
 				tris.Add(i + 1);
-				if (i < segmentCount - 1)
-					tris.Add(i + 2);
-				else
-					tris.Add(1);
+				tris.Add(i + 2);
 			}
 
 			//Generate mesh
