@@ -8,10 +8,10 @@ https://www.gamasutra.com/blogs/RobWare/20180226/313491/Fast_2D_shadows_in_Unity
 
 FEATURES
 
-Easy 2D Lighting
-Shadow Mapping
-Normal Mapping
-On/Off Self Shadowing
+- Easy 2D Lighting
+- Shadow Mapping
+- Normal Mapping
+- On/Off Self Shadowing
 
 INSTALL
 
