@@ -96,10 +96,6 @@ Shader "Bird/Light2D/Light"
 					return c;
 				}*/
 
-				//return float4(screenPos, 0, 1);
-				//return float4(tex2D(_NormalMap, IN.screenUV).xyz, 1);
-				//return float4(1,0,0,1);
-
 				//Apply normals
 				float3 normal = UnpackNormal(tex2D(_NormalMap, IN.screenUV.xy));
 				c *= CalcNormalsLighting(normal, _LightPosition.xy, IN.worldPos, _LightPosition.w);
