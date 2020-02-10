@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 120461274}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27d7bf909e4931c4caca959e0eaa1623, type: 3}
+  m_Script: {fileID: 11500000, guid: da10b2a506dfdfe47b645f5679561e78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mSelfShadow: 1
@@ -181,7 +181,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 120461274}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.5, y: 6.67, z: -41.66797}
+  m_LocalPosition: {x: -4.56, y: 6.75, z: -41.66797}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 324176484}
@@ -213,17 +213,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 316916479}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ac7fab121592154b9b65edb97c7e3f0, type: 3}
+  m_Script: {fileID: 11500000, guid: 7e77b84e87f873b439a6d508658a536b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 48.26044
-  color: {r: 0, g: 0.26089263, b: 1, a: 1}
+  radius: 22.938292
+  color: {r: 0, g: 0.36204123, b: 1, a: 1}
   intensity: 1
   spread: 360
   innerRadius: 0
   innerAngle: 0
   falloffExponent: 1
-  shadowStrength: 0.678
+  shadowStrength: 1
 --- !u!4 &316916482
 Transform:
   m_ObjectHideFlags: 0
@@ -231,8 +231,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 316916479}
-  m_LocalRotation: {x: -0, y: -0, z: 0.18722229, w: -0.98231757}
-  m_LocalPosition: {x: -9.65, y: -2.55, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.16872904, w: -0.98566246}
+  m_LocalPosition: {x: -9.52, y: 1.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 324176484}
@@ -301,7 +301,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 364906485}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27d7bf909e4931c4caca959e0eaa1623, type: 3}
+  m_Script: {fileID: 11500000, guid: da10b2a506dfdfe47b645f5679561e78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mSelfShadow: 1
@@ -348,7 +348,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 364906485}
   m_LocalRotation: {x: -0, y: -0, z: 0.3517481, w: 0.9360947}
-  m_LocalPosition: {x: -19.07, y: -4.62, z: -41.66797}
+  m_LocalPosition: {x: -20.6, y: -3.63, z: -41.66797}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 324176484}
@@ -380,17 +380,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 932075903}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ac7fab121592154b9b65edb97c7e3f0, type: 3}
+  m_Script: {fileID: 11500000, guid: 7e77b84e87f873b439a6d508658a536b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 30.927843
+  radius: 25.095188
   color: {r: 1, g: 0, b: 0, a: 1}
-  intensity: 0.666
+  intensity: 1
   spread: 360
   innerRadius: 0
   innerAngle: 0
   falloffExponent: 1
-  shadowStrength: 0.565
+  shadowStrength: 1
 --- !u!4 &932075906
 Transform:
   m_ObjectHideFlags: 0
@@ -398,8 +398,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932075903}
-  m_LocalRotation: {x: -0, y: -0, z: 0.9680254, w: -0.2508523}
-  m_LocalPosition: {x: -33.6, y: -4.4, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.096470445, w: -0.9953359}
+  m_LocalPosition: {x: -34.52, y: 2.47, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 324176484}
@@ -546,7 +546,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1500729194}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.22, y: -5.56, z: 0}
+  m_LocalPosition: {x: -0.47, y: -5.94, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 324176484}
@@ -561,7 +561,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1500729194}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27d7bf909e4931c4caca959e0eaa1623, type: 3}
+  m_Script: {fileID: 11500000, guid: da10b2a506dfdfe47b645f5679561e78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mSelfShadow: 1
@@ -617,12 +617,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1806365945}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ac7fab121592154b9b65edb97c7e3f0, type: 3}
+  m_Script: {fileID: 11500000, guid: 7e77b84e87f873b439a6d508658a536b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 25.546705
-  color: {r: 0.034482718, g: 1, b: 0, a: 1}
-  intensity: 0.574
+  radius: 22.631197
+  color: {r: 0, g: 1, b: 0.021962404, a: 1}
+  intensity: 1
   spread: 360
   innerRadius: 0
   innerAngle: 0
@@ -635,8 +635,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1806365945}
-  m_LocalRotation: {x: -0, y: -0, z: 0.29102272, w: -0.9567162}
-  m_LocalPosition: {x: -3.24, y: -11.79, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.24308267, w: 0.9700056}
+  m_LocalPosition: {x: 3.93, y: -16.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 324176484}
