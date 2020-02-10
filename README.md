@@ -33,3 +33,4 @@ To add a shadow caster, add the "LightCollider" script to any object with a Coll
 
 To use normal maps, use a copy of the "Sprite Lit" material.  Or create a material with the Bird/Light2D/SpriteLit shader.
 
+If you have any questions, feel free to e-mail me at chase.grozdina@gmail.com
