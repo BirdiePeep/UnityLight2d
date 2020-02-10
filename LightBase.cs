@@ -100,7 +100,7 @@ namespace Bird.Light2D
 		}
 
 		//Mesh
-		public Mesh mesh;
+		[NonSerialized] public Mesh mesh;
 
 		public static List<Vector3> verts = new List<Vector3>();
 		public static List<int> tris = new List<int>();
