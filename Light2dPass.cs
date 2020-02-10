@@ -89,7 +89,7 @@ namespace Bird.Light2D
 			ref var targetDescriptor = ref renderingData.cameraData.cameraTargetDescriptor;
 			{
 				RenderTextureDescriptor descriptor = new RenderTextureDescriptor(targetDescriptor.width, targetDescriptor.height);
-				descriptor.colorFormat = RenderTextureFormat;
+				descriptor.colorFormat = RenderTextureFormat.RHalf;
 				descriptor.sRGB = false;
 				descriptor.useMipMap = false;
 				descriptor.autoGenerateMips = false;

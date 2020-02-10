@@ -22,6 +22,7 @@ INSTALL
 - Copy this project directory anywhere into your assets.
 - Select the "UniveralRenderPipelineAsset_Renderer" that was created earlier.
 - From the inspector, click the + symbol to add a new feature and select "Light2d Feature".
+- (Optional) Copy or merge the Gizmos folder into the root Assets directory.  This will add small icons in the editor for light sources.
 - Everything is setup, now you are ready to use the package.
 
 HOW TO USE
