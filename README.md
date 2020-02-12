@@ -1,6 +1,6 @@
 DESCRIPTION
 
-This project is used for 2D Lighting for Unity using the LWRP.
+This project is used for 2D Lighting for Unity using the Universal Render Pipeline.
 Lights are drawn as an additive layer, so it can affect anything previously drawn on screen.
 Shadowing is achieved with a 1D polar coordinate technique which allows for very fast dynamic shadows.
 The shadowing technique was adopted from this article.
@@ -16,7 +16,7 @@ FEATURES
 INSTALL
 
 - Open your Unity project.
-- Using the Unity Package Manager, download and install the "Lightweight RP".
+- Using the Unity Package Manager, download and install the "Universal RP".
 - Create Pipeline Asset using the menu Asset > Create > Rendering > Universal Render Pipeline > Pipeline Asset (Forward Renderer)
 - From the Project Settings > Graphics, set the "Scriptable Render Pipeline Settings" field to this new asset.
 - Copy this project directory anywhere into your assets.

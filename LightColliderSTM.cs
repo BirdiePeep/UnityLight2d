@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using CreativeSpore.SuperTilemapEditor;
 
-namespace Light2D
+namespace Bird.Light2D
 {
 	[ExecuteInEditMode]
 	public class LightColliderSTM : MonoBehaviour
@@ -41,7 +41,7 @@ namespace Light2D
 			var collider = chunk.GetComponent<LightCollider>();
 			if (collider == null)
 				collider = chunk.AddComponent<LightCollider>();
-			chunk.layer = LightingFeature.inst.colliderLayerMask.ToLayerInt();
+			//chunk.layer = LightingFeature.inst.colliderLayerMask.ToLayerInt();
 			//chunk.hideFlags = HideFlags.None;
 			return collider;
 		}

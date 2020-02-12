@@ -4,6 +4,7 @@ using System.Collections;
 
 namespace Bird.Light2D
 {
+	[CanEditMultipleObjects]
 	[CustomEditor(typeof(LightBase))]
 	public class LightBaseEditor : Editor
 	{

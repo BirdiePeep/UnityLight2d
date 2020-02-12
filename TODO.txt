@@ -1,0 +1,13 @@
+Other Light Shapes
+	- Sprite
+	- Freeform
+	- Directional
+	- Global
+	
+Light Features
+	- Bleed value
+	- Cookies
+	- Light accumulation (look at how Unity does this)
+
+Other
+	- Batching collision geometry
