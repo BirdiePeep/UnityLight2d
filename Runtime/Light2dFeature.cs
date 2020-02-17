@@ -17,7 +17,7 @@ namespace Bird.Light2D
 		[NonSerialized] public Mesh fullscreenMesh;
 		[NonSerialized] public RenderTexture shadowMapFinal;
 
-		public LayerMask colliderLayerMask = 1;
+		public LayerMask colliderLayerMask = ~0;
 
 		public int shadowResolution = 2048;
 		public int maxShadowMaps = 64;
