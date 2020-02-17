@@ -65,7 +65,7 @@ namespace Bird.Light2D
 		}
 		protected private void OnDrawGizmos()
 		{
-			Gizmos.DrawIcon(transform.position, "UnityLight2D/light.png");
+			Gizmos.DrawIcon(transform.position, "Packages/com.birdiepeep.unitylight2d/Gizmos/light.png");
 		}
 
 		//Mesh generation
