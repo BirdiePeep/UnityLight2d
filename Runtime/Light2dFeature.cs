@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine.Experimental.Rendering;
 using UnityEngine.Experimental.Rendering.Universal;
-using UnityEngine.Experimental.Rendering.LWRP;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.Rendering;
 using System;

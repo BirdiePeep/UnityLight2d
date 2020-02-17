@@ -15,14 +15,16 @@ FEATURES
 
 INSTALL
 
-- Open your Unity project.
-- Using the Unity Package Manager, download and install the "Universal RP".
+Install Package
+- Open the Unity Package Manager, using Window > Package Manager
+- Click the + symbol in the upper left corner, select "Add package from git url..."
+- Paste the URL "https://github.com/BirdiePeep/UnityLight2d.git" without quotes and hit "Add"
+
+Setup Rendering
 - Create Pipeline Asset using the menu Asset > Create > Rendering > Universal Render Pipeline > Pipeline Asset (Forward Renderer)
 - From the Project Settings > Graphics, set the "Scriptable Render Pipeline Settings" field to this new asset.
-- Copy this project directory anywhere into your assets.
 - Select the "UniveralRenderPipelineAsset_Renderer" that was created earlier.
 - From the inspector, click the + symbol to add a new feature and select "Light2d Feature".
-- (Optional) Copy or merge the Gizmos folder into the root Assets directory.  This will add small icons in the editor for light sources.
 - Everything is setup, now you are ready to use the package.
 
 HOW TO USE

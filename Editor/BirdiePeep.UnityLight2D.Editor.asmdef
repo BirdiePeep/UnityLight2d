@@ -1,0 +1,4 @@
+{
+    "name": "UnityLight2D.Editor",
+    "references": [ "UnityLight2D" ]
+}

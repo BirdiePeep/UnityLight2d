@@ -1,9 +1,10 @@
 {
+	"name": "com.birdiepeep.unitylight2d",
+	"displayName": "UnityLight2D",
+	"version": "0.1.0"
+	"unity": "2019.2",
+	"description": "An open source 2D lighting solution.  Uses a 1D polar coordinate shadowing technique.",
     "dependencies": {
 		"com.unity.render-pipelines.universal": "7.1.8"
-	},
-    "description": "[UnityLight2D] An open source 2D lighting solution.",
-    "displayName": "UnityLight2D",
-    "name": "com.bird.unitylight2d",
-    "version": "0.1.0"
+	}
 }
