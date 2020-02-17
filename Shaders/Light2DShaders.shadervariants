@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!200 &20000000
+ShaderVariantCollection:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Light2DShaders
+  m_Shaders:
+  - first: {fileID: 4800000, guid: 91bfb1df8f0f19347a8730e03266ade4, type: 3}
+    second:
+      variants: []
+  - first: {fileID: 4800000, guid: c200be1525e55124294394156072b60c, type: 3}
+    second:
+      variants: []
+  - first: {fileID: 4800000, guid: f370ff931a4570c49b70b12a31cacdf1, type: 3}
+    second:
+      variants: []
+  - first: {fileID: 4800000, guid: 4bcb3d94adc5acf44b2e1ac620c0b2df, type: 3}
+    second:
+      variants: []
+  - first: {fileID: 4800000, guid: 5b4ac8316879e294d9696004d069206b, type: 3}
+    second:
+      variants: []
+  - first: {fileID: 4800000, guid: be8dbf8cdc50d7945bfe357e821a1537, type: 3}
+    second:
+      variants: []

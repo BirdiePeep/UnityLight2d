@@ -1,5 +1,7 @@
 {
-    "dependencies": {},
+    "dependencies": {
+		"com.unity.render-pipelines.universal": "7.1.8"
+	},
     "description": "[UnityLight2D] An open source 2D lighting solution.",
     "displayName": "UnityLight2D",
     "name": "com.bird.unitylight2d",
