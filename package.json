@@ -1,9 +1,10 @@
 {
 	"name": "com.birdiepeep.unitylight2d",
 	"displayName": "UnityLight2D",
-	"version": "0.1.0"
+	"version": "0.1.0",
 	"unity": "2019.2",
-	"description": "An open source 2D lighting solution.  Uses a 1D polar coordinate shadowing technique.",
+	"description": "An open source 2D lighting solution.  Lights are drawn as an additive layer, so it can affect anything previously drawn on screen.
+Shadowing is achieved with a 1D polar coordinate technique which allows for very fast dynamic shadows.",
     "dependencies": {
 		"com.unity.render-pipelines.universal": "7.1.8"
 	}
