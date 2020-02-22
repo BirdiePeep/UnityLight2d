@@ -1,4 +1,5 @@
 {
     "name": "UnityLight2D.Editor",
-    "references": [ "UnityLight2D" ]
+    "references": [ "UnityLight2D" ],
+	"includePlatforms": [ "Editor" ]
 }

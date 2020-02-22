@@ -177,14 +177,22 @@ namespace Bird.Light2D
 		}
 		public static void GenerateEdges(PolygonCollider2D collider, List<Edge> output)
 		{
-			var points = collider.points;
-			for (int i = 0; i < points.Length; i++)
+			List<Vector2> points = new List<Vector2>();
+			for(int pathIter=0; pathIter < collider.pathCount; pathIter++)
 			{
-				var point1 = points[i];
-				var point2 = points[(i + 1) % points.Length];
-				var normal = Vector3.Cross(Vector3.back, Vector3.Normalize(point2 - point1));
+				//Get path
+				points.Clear();
+				collider.GetPath(pathIter, points);
 
-				output.Add(new Edge(point1, point2, normal));
+				//Get edges
+				for (int i = 0; i < points.Count; i++)
+				{
+					var point1 = points[i];
+					var point2 = points[(i + 1) % points.Count];
+					var normal = Vector3.Cross(Vector3.back, Vector3.Normalize(point2 - point1));
+
+					output.Add(new Edge(point1, point2, normal));
+				}
 			}
 		}
 		public static void GenerateEdges(List<Vector3> verts, List<int> tris, List<Edge> output)
