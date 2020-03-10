@@ -183,11 +183,13 @@ namespace Bird.Light2D
 					if(lightPropBlock == null)
 						lightPropBlock = new MaterialPropertyBlock();
 
+					float lightGlobalAngle = MathEx.AngleBetweenTwoUnitVectors(Vector3.forward, Vector3.right, light.transform.rotation * Vector3.right);
+
 					lightPropBlock.SetColor("_Color", light.color * light.intensity);
 					lightPropBlock.SetVector("_LightPosition", new Vector4(
 						light.transform.position.x,
 						light.transform.position.y,
-						light.angle * Mathf.Deg2Rad,
+						lightGlobalAngle,
 						light.radius));
 					lightPropBlock.SetVector("_DistFalloff", new Vector4(
 						light.innerRadius * light.radius,
